@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    background: url(header.jpg) no-repeat center center; 
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 90px 200px 110px 1fr;
+    min-height: 100%;
+}
+
+
+.msg {
+    grid-row-start: 2;
+    align-self: flex-end;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn_1 {
+    grid-row: 4;
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(255, 69, 0, 0.7);
+    border-color: transparent;
+    font-weight: bold;
+    border-start-end-radius: 10%;
+}
